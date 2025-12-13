@@ -173,3 +173,102 @@ console.log(b);
 
 c = 3 !== 3;
 console.log(c);
+
+// Type coercion
+
+x1 = 5 + '5';
+console.log(x1, typeof x1);
+
+x2 = 5 * '5';
+console.log(x2, typeof x2);
+
+x3 = 5 + null;
+console.log(x3, typeof x3);
+
+x4 = Number(true);
+console.log(x4, typeof x4);
+
+x5 = 5 + undefined;
+console.log(x5, typeof x5);
+
+// Strings
+// Strings are primitive but it puts wrapper when we use methods with them
+age2 = 33;
+name2 = 'Efe';
+x3 = 'Hello, my name is ' + name2 + ' and I am ' + age2 + ' years old.';
+console.log(x3);
+
+// Template Literal
+x4 = `Hello, my name is ${name2} and I am ${age2} years old.`;
+console.log(x4);
+
+// String properties and methods
+console.log(x4.length);
+console.log(x4.toUpperCase());
+console.log(x4.toLowerCase());
+console.log(x4.charAt(0));
+console.log(x4[0]);
+console.log(x4.indexOf('e'));
+console.log(x4.substring(0, 5));
+console.log(x4.substring(5));
+console.log(x4.slice(-11, -6));
+console.log(x4.replace('name', 'isim'));
+console.log(x4.includes('Hell'));
+console.log(x4.valueOf());
+console.log(x4.valueOf());
+console.log(x4.split(' '));
+
+const myString = 'developer';
+myString[0].charAt(0);
+
+console.log(myString[0].toUpperCase() + myString.substring(1));
+console.log(`${myString[0].toUpperCase()}${myString.slice(1)}`);
+
+// Numbers
+
+const num12 = new Number(4.567);
+let g;
+g = num12.toString();
+console.log(g);
+g = num12.toFixed(2);
+console.log(g);
+g = num12.toPrecision(5);
+console.log(g);
+g = num12.toExponential(2);
+console.log(g);
+g = Number.MAX_VALUE;
+console.log(g);
+g = Number.MIN_VALUE;
+console.log(g);
+
+//Math Object
+console.log(Math);
+
+h = Math.sqrt(9);
+console.log(h);
+
+h = Math.abs(-5);
+console.log(h);
+
+h = Math.round(4.6);
+console.log(h);
+
+h = Math.ceil(4.3);
+console.log(h);
+
+h = Math.floor(4.3);
+console.log(h);
+
+h = Math.pow(2, 3);
+console.log(h);
+
+h = Math.min(6, 7);
+console.log(h);
+
+h = Math.random();
+console.log(h);
+
+h = Math.floor(Math.random() * 10 + 1); // Random number between 1 and 10
+console.log(h);
+
+// Date&Time. Not mandatory.
